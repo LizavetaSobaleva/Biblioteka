@@ -20,8 +20,8 @@ public class BazaDanych {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection polaczenie=
                     DriverManager.getConnection(
-                    "jdbc:sqlserver://BEST-KOMP\\SQLEXPRESS:1433;databaseName=Biblioteka",
-                    "sa","zaq1@WSX");
+                    "jdbc:sqlserver://COMPUTERNAME\\SQLEXPRESS:1433;databaseName=Biblioteka",
+                    "username","password");
             return polaczenie; 
             }
         catch(Exception ex) {
